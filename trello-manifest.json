@@ -6,7 +6,7 @@
   },
   "author": "Seu Nome",
   "capabilities": [
-    "card-badges",
+    "card-badges", 
     "card-detail-badges"
   ],
   "connectors": {
