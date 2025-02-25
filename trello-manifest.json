@@ -1,0 +1,17 @@
+{
+  "name": "Contagem Regressiva",
+  "details": "Mostra uma contagem regressiva dos dias restantes até o prazo de vencimento dos cartões.",
+  "icon": {
+    "url": "https://img.icons8.com/ios-filled/50/000000/timer.png"
+  },
+  "author": "Seu Nome",
+  "capabilities": [
+    "card-badges",
+    "card-detail-badges"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "./index.html"
+    }
+  }
+}
