@@ -60,11 +60,12 @@ function getBadges(t, isDetailed) {
           `${daysRemaining} dias` : 
           `${Math.abs(daysRemaining)} dias`;
           
+        // Usando a propriedade formatter para formatar o texto corretamente
         return [{
-          // Usando HTML para destacar o texto (negrito e tamanho maior)
-          text: `<strong style="font-size: 14px;">${cardBadgeText}</strong>`,
+          text: cardBadgeText,
           color: color,
-          refresh: 60*60*24 // Atualiza a cada 24 horas
+          refresh: 60*60*24, // Atualiza a cada 24 horas
+          icon: 'https://img.icons8.com/ios-filled/50/000000/timer.png' // Adiciona ícone para destacar
         }];
       }
     });
