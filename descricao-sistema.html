@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva de Prazos - Power-Up para Trello</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #172B4D;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #F9FAFC;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #0079BF;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #0079BF;
+            font-size: 24px;
+            margin-top: 30px;
+            border-bottom: 1px solid #DFE1E6;
+            padding-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: #5E6C84;
+            margin-bottom: 30px;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #61BD4F;
+            font-weight: bold;
+        }
+        
+        .color-indicator {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        .green {
+            background-color: #61BD4F;
+        }
+        
+        .yellow {
+            background-color: #F2D600;
+        }
+        
+        .red {
+            background-color: #EB5A46;
+        }
+        
+        .use-case {
+            background-color: white;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 rgba(9,30,66,.25);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .use-case h3 {
+            margin-top: 0;
+            color: #172B4D;
+        }
+        
+        .steps {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        
+        .steps li {
+            margin-bottom: 10px;
+        }
+        
+        .cta {
+            background-color: #0079BF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 3px;
+            margin: 30px 0;
+        }
+        
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #5E6C84;
+            font-size: 14px;
+        }
+        
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contagem Regressiva de Prazos</h1>
+        <p class="tagline">Visualize facilmente os prazos dos seus cartões com contadores em tempo real</p>
+    </header>
+    
+    <section>
+        <h2>O que este Power-Up faz</h2>
+        <p>Este Power-Up exibe uma contagem regressiva visual dos dias restantes até o prazo de entrega de cada cartão, ajudando equipes a identificar rapidamente prioridades e evitar atrasos.</p>
+        
+        <img src="https://img.icons8.com/ios-filled/50/000000/timer.png" alt="Ícone de relógio" style="display: block; margin: 20px auto;">
+    </section>
+    
+    <section>
+        <h2>Principais recursos</h2>
+        <ul class="feature-list">
+            <li><strong>Contagem regressiva automática:</strong> Mostra os dias restantes até o prazo diretamente nos cartões</li>
+            <li><strong>Sistema de alerta visual por cores e mensagens:</strong>
+                <ul style="list-style-type: none; padding-left: 0; margin-top: 10px;">
+                    <li><span class="color-indicator green"></span> <strong>Verde:</strong> Mais de 3 dias para o prazo</li>
+                    <li><span class="color-indicator yellow"></span> <strong>Amarelo:</strong> 3 dias ou menos para o prazo</li>
+                    <li><span class="color-indicator yellow"></span> <strong>"Vencimento Amanhã":</strong> Alerta especial em amarelo</li>
+                    <li><span class="color-indicator red"></span> <strong>"Vencimento Hoje":</strong> Alerta especial em vermelho</li>
+                    <li><span class="color-indicator red"></span> <strong>Vermelho:</strong> Prazo expirado (mostra dias de atraso)</li>
+                </ul>
+            </li>
+            <li><strong>Totalmente integrado:</strong> Utiliza as datas de entrega já definidas no Trello</li>
+            <li><strong>Visualização rápida:</strong> Badge compacto no cartão com detalhes expandidos ao abrir o cartão</li>
+            <li><strong>Atualização diária:</strong> Se mantém sincronizado automaticamente</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Perfeito para</h2>
+        <div class="use-cases">
+            <div class="use-case">
+                <h3>Equipes que gerenciam múltiplos prazos</h3>
+                <p>Mantenha o controle de vários projetos e entregas simultâneas com uma visualização clara de todos os prazos em um único lugar.</p>
+            </div>
+            
+            <div class="use-case">
+                <h3>Projetos com entregas sequenciais</h3>
+                <p>Identifique facilmente quais tarefas estão próximas do vencimento para garantir que as dependências sejam respeitadas.</p>
+            </div>
+            
+            <div class="use-case">
+                <h3>Fluxos de trabalho que dependem do cumprimento de prazos</h3>
+                <p>Mantenha sua equipe informada sobre os prazos críticos para garantir que o trabalho flua sem interrupções.</p>
+            </div>
+            
+            <div class="use-case">
+                <h3>Visualização rápida de prioridades baseadas em tempo</h3>
+                <p>Identifique instantaneamente quais cartões precisam de atenção imediata com base no tempo restante.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Como usar</h2>
+        <ol class="steps">
+            <li>Instale o Power-Up no seu quadro</li>
+            <li>Defina datas de entrega normalmente nos seus cartões</li>
+            <li>Visualize automaticamente os dias restantes e o status por cores</li>
+        </ol>
+    </section>
+    
+    <div class="cta">
+        <p>Não perca mais prazos! Adicione a Contagem Regressiva de Prazos ao seu quadro e mantenha seu time sempre atualizado sobre o tempo disponível para cada tarefa.</p>
+    </div>
+    
+    <footer>
+        <p>© 2025 Contagem Regressiva de Prazos para Trello. Desenvolvido por Alan Cardane.</p>
+        <p>Ícones por <a href="https://icons8.com" target="_blank">Icons8</a></p>
+    </footer>
+</body>
+</html>
