@@ -55,8 +55,14 @@ function getBadges(t, isDetailed) {
           refresh: 60*60*24 // Atualiza a cada 24 horas
         }];
       } else {
+        // Texto para o badge normal com a palavra "dias"
+        const cardBadgeText = daysRemaining >= 0 ? 
+          `${daysRemaining} dias` : 
+          `${Math.abs(daysRemaining)} dias`;
+          
         return [{
-          text: daysRemaining.toString(),
+          // Usando HTML para destacar o texto (negrito e tamanho maior)
+          text: `<strong style="font-size: 14px;">${cardBadgeText}</strong>`,
           color: color,
           refresh: 60*60*24 // Atualiza a cada 24 horas
         }];
