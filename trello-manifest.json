@@ -4,14 +4,14 @@
   "icon": {
     "url": "https://img.icons8.com/ios-filled/50/000000/timer.png"
   },
-  "author": "Seu Nome",
+  "author": "Alan Cardane",
   "capabilities": [
     "card-badges", 
     "card-detail-badges"
   ],
   "connectors": {
     "iframe": {
-      "url": "./index.html"
+      "url": "https://neon-sprinkles-028b83.netlify.app/index.html"
     }
   }
 }
